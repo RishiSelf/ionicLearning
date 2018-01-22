@@ -1,0 +1,25 @@
+page-home {
+    .content-md {
+        background: #7bbcf2;
+    }
+     
+    .content-frame {
+        width: 480px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .content-frame h1.logo-frame {
+        font-family: 'Kalam', cursive;
+        font-size: 70px;
+    }
+    .btn-frame {
+        max-width: 240px;
+        margin: 20px auto;
+        padding-top: 30px;
+    }
+    .btn-frame button {
+        display: block;
+        width: 100%;
+        border-radius: 30px 30px;
+    }
+}
