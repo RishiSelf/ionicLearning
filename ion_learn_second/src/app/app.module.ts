@@ -4,7 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { SharedModule } from './shared.module';
+
 import { MyApp } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -17,8 +20,7 @@ import { MyApp } from './app.component';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
-    
+    MyApp    
   ],
   providers: [
     StatusBar,

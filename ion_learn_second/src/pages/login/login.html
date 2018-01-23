@@ -18,17 +18,16 @@
 <ion-content padding>
    <section class="login-container">
       <form name="loginForm">
-
-          <div class="list list-inset">
-              <label class="item item-input">
-                  <span class="term">Username</span>
-                  <input type="text" placeholder="Username" class="form-control" />
-              </label>
-              <label class="item item-input">
-                  <span class="term">Password</span>
-                  <input type="password" placeholder="Password" class="form-control" />
-              </label>
-          </div>
+          <ion-list class="list list-inset">
+              <ion-item class="item item-input">
+                  <ion-label class="term">Username</ion-label>
+                  <ion-input type="text" placeholder="Username" class="form-control"></ion-input>
+              </ion-item>
+              <ion-item class="item item-input">
+                  <ion-label class="term">Password</ion-label>
+                  <ion-input type="password" placeholder="Password" class="form-control"></ion-input>
+              </ion-item> 
+          </ion-list>
           <div class="bottom-row">
               <button class="button" ion-button color="dark" (click)="loginAccount()" >
                 Login
@@ -44,8 +43,5 @@
        </form>
 
    </section> <!-- =Login Container End//= -->
-   
-  
-        
    
 </ion-content>

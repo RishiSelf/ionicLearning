@@ -8,21 +8,43 @@ page-login {
     }
     .login-container .item {
         padding-bottom: 20px;
+        
+    }
+    .login-container .item:last-child {
+        border: 0 none;
     }
     .login-container .item .term {
         display: block;
         text-align: left;
         font-size: 16px;
         margin-bottom: 10px;
+        width: 100%;
     }
-    .login-container .item .form-control {
+    .login-container .item .item-inner .form-control {
         width: 98%;
+        max-width: inherit;
         height: 48px;
         display: block;
         padding: 0 2%;
-
+        position: relative;
         border: 2px solid #e9e9e9;
 
         border-radius: 10px 10px;
+    }
+
+    .login-container .item .select.form-control {
+        max-width: inherit;
+        padding-top: 15px;
+        position: relative;
+    }
+    .login-container .item {
+        padding-left: 0;
+    }
+    .login-container .item .item-inner {
+        border: 0 none;
+    }
+    .login-container .item .item-inner .input-wrapper {
+      width: 100%;
+      display: block;  
     }
 }

@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Profile</ion-title>
+    <ion-title>
+      Profile
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  
+    <ion-grid class="main-content-grid">
+      <ion-row class="main-content-row">
+        <ion-col class="sidebar-listing" col-xl-3 col-sm-4 col-12>
+          <!-- <dashboard-sidebar></dashboard-sidebar> -->
+          <ion-list>
+            <ion-item *ngFor="let profileList of profileLists">{{profileList}}</ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row><!-- =Main Content Row End//= -->
+    </ion-grid>  
 </ion-content>

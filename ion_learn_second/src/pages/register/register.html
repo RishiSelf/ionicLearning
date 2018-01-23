@@ -14,5 +14,63 @@
 
 
 <ion-content padding>
+    <section class="register-container">
+        <form name="registerForm">
+            <ion-list class="list list-inset">
+                <ion-item class="item item-input">
+                    <ion-label class="term">Username</ion-label>
+                    <ion-input type="text" placeholder="Username" class="form-control"></ion-input>
+                </ion-item>
+                <ion-item class="item item-input">
+                    <ion-label class="term">Password</ion-label>
+                    <ion-input type="password" placeholder="Password" class="form-control"></ion-input>
+                </ion-item>
+                <ion-item class="item item-input">
+                    <ion-label class="term">Confirm Password</ion-label>
+                    <ion-input type="password" placeholder="Confirm Password" class="form-control"></ion-input>
+                </ion-item>
+               
+                <ion-item class="item item-input select-item">
+                  <ion-label class="term" >Gender</ion-label>
+                  <ion-select class="form-control" placeholder="Select Your Gender">
+                    <ion-option value="male">Male</ion-option>
+                    <ion-option value="female">Female</ion-option>
+                    <ion-option value="others">Others</ion-option>                    
+                  </ion-select>
+                </ion-item>
+                
+            </ion-list>
+            <div class="bottom-row">
+                <button class="button" ion-button color="dark" (click)="createNewAccount()" >
+                  Create Account
+                </button>
+                <p class="other-option">
+                  <label>Already have an Account?</label>
+                  <button ion-button color="default" (click)="loginAccount()">
+                    Log In
+                  </button>
+                </p>
+            </div>
+            
+         </form>
 
+         <!-- =Table Frame= -->
+         <ion-grid>
+           <ion-row>
+             <ion-col col-12>
+                <table width="100%" class="table-frame">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Password</th>
+                      <th>Confirm Password</th>
+                      <th>Gender</th>
+                    </tr>
+                  </thead>
+                </table>
+             </ion-col>
+           </ion-row>
+         </ion-grid><!-- =Table Frame End//= -->
+  
+     </section> <!-- =Register Container End//= -->
 </ion-content>
